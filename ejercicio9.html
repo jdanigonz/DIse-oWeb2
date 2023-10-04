@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <center><h1>INSERTAR ELEMENTOS A UN ARRAY</h1></center>
+</body>
+</html>
+<script>
+    function salto_de_linea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+    
+    function mostrarMensaje (mensaje){
+        document.write(mensaje);
+        salto_de_linea();
+    }  
+var equipos = [];
+var cantidad = parseInt(prompt("cuantos equipos desea insertar"))
+var contador = 1;
+
+while(contador <= cantidad){
+    var equipoIntroducido = prompt("nombre del equipo" + contador);
+    equipos.push(equipoIntroducido)
+    contador ++;
+
+}
+console.log(equipos);
+
+
+</script>

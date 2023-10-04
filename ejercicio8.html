@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <center><h1> ARRAY O VECTOR</h1></center>
+</body>
+</html>
+<script>
+    function salto_de_linea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+    
+    function mostrarMensaje (mensaje){
+        document.write(mensaje);
+        salto_de_linea();
+    }
+var array = ["Lunes","Martes","Miercoles","Jueves","Viernes", "Sabado", "Domingo"]
+var bienvenida = "dias de la semana"
+mostrarMensaje(bienvenida)
+for(var  i = 0; i < array.length; i= i+2 ){
+    document.write(array[i])
+    salto_de_linea();
+}
+
+
+</script>
