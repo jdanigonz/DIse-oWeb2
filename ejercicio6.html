@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <center><h1>JUEGO</h1></center>   
+    
+</body>
+
+</html>
+<script>
+    function salto_de_linea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        }
+    function mostrarMensaje (mensaje){
+        document.write(mensaje);
+            salto_de_linea();
+        }
+        var numeroAdivinar = Math.round(Math.random()*10)
+        var intentos = 3;
+        var contador = 1;
+        while(contador <= intentos){
+            var numeroIntroducido = parseInt(prompt("ingrese el numero a adivinar del 1 al 10"))
+            if(numeroIntroducido == numeroAdivinar){
+                alert("GANASTE" + contador + "en el intento " + contador + " el numero "+ numeroAdivinar)
+                break;
+            
+            }else{
+                alert("LOSER")
+            }
+            contador ++;
+
+        }
+        alert("fin")
+</script>
+
+REALIZA UN JUEGO DIFERENTE AL REALIZADO UTILIZANDO LAS HERRAMIENTAS VISTAS

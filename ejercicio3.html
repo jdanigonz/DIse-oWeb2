@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Diseño Web II</h1>
+</body>
+</html>
+<script>
+
+function mostrar(mensaje,res,a,opreacion,b){
+    document.write(mensaje,a,opreacion,b)
+    document.write("<br>")  
+    document.write("Resultado:",res)
+    document.write("<br>")
+    
+
+}
+let s1 = 3;
+let s2 = 5;
+let r1 = 5;
+let r2 = 5;
+let m1 = 10;
+let m2 = 2;
+let d1 = 10;
+let d2 = 2;
+let c = 10;
+
+
+function suma (s1,s2){
+    return s1+s2;
+
+}
+
+function Resta (r1,r2){
+    return r1-r2;
+}
+
+function Multi (m1,m2){
+    return m1*m2;
+}
+
+function divi (d1,d2){
+    return d1/d2;
+}
+
+function cuadrado (c1){
+    return c*c;
+}
+
+let resultadoSuma = suma(s1, s2);
+let resultadoResta = Resta(r1, r2);
+let resultadoMultiplicacion = Multi(m1, m2);
+let resultadoDivision = divi(d1, d2);
+let resultadoCuadrado = cuadrado(c);
+
+mostrar("Suma: ",resultadoSuma,s1,("+"),s2)
+mostrar("Resta: ",resultadoResta,r1,("-"),r2)
+mostrar("Multi: ",resultadoMultiplicacion,m1,("*"),m2)
+mostrar("Dividir: ",resultadoDivision,d1,("/"),d2)
+mostrar("Cuadrado: ",resultadoCuadrado,c,("*"),c)
+
+console.log("Resultado suma:", resultadoSuma);
+console.log("Resultado resta:", resultadoResta);
+console.log("Resultado multiplicación:", resultadoMultiplicacion);
+console.log("Resultado división:", resultadoDivision);
+console.log("Resultado cuadrado:", resultadoCuadrado);
+</script>

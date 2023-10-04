@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinar Países</title>
+</head>
+<body>
+    <center><h1>JUEGO DE ADIVINAR PAÍSES</h1></center>   
+    
+</body>
+
+</html>
+<script>
+    function salto_de_linea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+    
+    function mostrarMensaje (mensaje){
+        document.write(mensaje);
+        salto_de_linea();
+    }
+
+    // Lista de países para adivinar
+    let paises = ["Ecuador", "Colombia", "Paraguay", "Argentina", "Brasil", "Uruguay", "Chile", "Peru", "Ecuador", "Guyana", "Bolivia"];
+    let paisAdivinar = paises[Math.floor(Math.random() * paises.length)]; // Se elige un país aleatoriamente
+    let intentos = 3;
+    let contador = 1;
+
+    while (contador <= intentos) {
+        var paisIntroducido = prompt("Adivina el pais Latinoamericano (Recuerda poner la primera letra mayuscula): (Intento " + contador + " de " + intentos + ")");
+        
+        if (paisIntroducido === paisAdivinar) {
+            alert("¡GANASTE! El país correcto es " + paisAdivinar);
+            break;
+        } else {
+            alert("¡INCORRECTO! Sigue intentando.");
+        }
+        
+        contador++;
+    }
+
+    if (contador > intentos) {
+        alert("¡Agotaste tus intentos! El país correcto era " + paisAdivinar);
+    }
+    
+    alert("Fin del juego");
+</script>
