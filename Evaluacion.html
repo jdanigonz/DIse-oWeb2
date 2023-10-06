@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion 1</title>
+    <style>
+        html{
+            background-color: aqua;
+        }
+        
+        body{
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <center><h1>ADIVINA LA POSICION </h1></center>
+    <script>
+        function salto_de_linea(){
+            document.write("<br>")
+        }
+    
+        function mostra_mensaje(mensaje){
+            document.write(mensaje)
+            salto_de_linea()
+        }
+    
+            
+        let vidas = 1;
+        let numero = 1;
+        let a = Math.round(Math.random()*10/2)
+        let b = Math.round(Math.random()*10/2)
+        let filas = []
+        let columnas = []
+        let mapa = [
+            [0,0,0,0,0],
+            [0,0,0,0,0],
+            [0,0,0,0,0],
+            [0,0,0,0,0],
+            [0,0,0,0,0]
+        ]
+    
+    
+        function Trys (){
+            let intentos = 3;
+            let contador = 1;
+
+            while (contador <= intentos) {
+            var ejeX = prompt("Adivina la posicion en  (Recuerda poner la primera letra mayuscula): (Intento " + contador + " de " + intentos + ")");
+            
+            if (ejeX === paisAdivinar) {
+                alert("¡GANASTE! El país correcto es " + paisAdivinar);
+                break;
+            } else {
+                alert("¡INCORRECTO! Sigue intentando.");
+                    }
+                }
+        }
+        function MapO() {
+            var filas = parseInt(prompt("Ingresa la primer coordenada(ojo solo numeros entre el 0 y el 4): "));
+            var columnas = parseInt(prompt("Ingresa la segunda coordenada(ojo solo numeros entre el 0 y el 4): "));
+            let encontrado = mapa[filas][columnas]
+            if ( 1 === encontrado) {
+                alert("Adivinaste en que posicion esta el elemento escondido ")
+            } else {
+                alert("You LOSER " + "GAME OVER");
+                alert("La posicion del elemento oculto, se moestrara  a continuacion.....");
+            }
+            
+        }
+        mapa[a][b] = numero
+     
+        for(var i = 0;i<mapa.length;i++){
+            document.write(mapa[i])
+            salto_de_linea()
+        }
+        console.log(mapa);
+        MapO();
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <center><h1>USO DE MATRICES</h1></center>
+</body>
+</html>
+<script>
+    let matriz = []; //inicializacion de matriz vacia
+    let matriz2= [[1,2,3],[4,5,6],[7,8,9]];
+
+matriz2[0][0] = 0;
+document.write(matriz2[0][0]);
+
+
+for(var i= 0 ; i < matriz2.length; i++){
+    for(var j= 0; j < matriz2.length; j++){
+        document.write(matriz2[i][j]); //imprime todos los elementos de una matriz
+    }
+}
+matriz.push(1);
+let matriz3= [[1,2,3],[4,5,6]];
+matriz3.push([7,8,9]);
+matriz3([0][0]).push(10);
+
+var aplanada = matriz2.flat();  //convertir una matriz bidimensional a un vector unidimensional
+console.log(aplanada);
+Math.max(...aplanada);
+
+var max =Math.max(...aplanada);
+console.log(max);
+
+</script>
